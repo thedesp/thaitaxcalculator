@@ -147,6 +147,7 @@ with tab_deductions:
     # Government Stimulus
     st.subheader("Stimulus")
     easy_e_receipt = st.number_input("Easy E-Receipt (2025)", min_value=0.0, max_value=50000.0, value=0.0, help="Purchases Jan 1 - Feb 15, 2025 with e-Tax Invoice")
+    teawdeemeekeun = st.number_input("เที่ยวดีมีคืน เมืองหลัก", min_value=0.0, max_value=20000.0, value=0.0, help="ค่าเที่ยว ค่ากิน Nov 1 - Dec 15, 2025"),
     mortgage_interest = st.number_input("Home Mortgage Interest", min_value=0.0, max_value=100000.0, value=0.0)
 
     # Logic for Insurance/Fund Caps
@@ -170,6 +171,7 @@ with tab_deductions:
         retirement_deductible +
         thai_esg + 
         easy_e_receipt +
+        teawdeemeekeun +
         mortgage_interest
     )
 
